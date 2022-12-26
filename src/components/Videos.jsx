@@ -8,7 +8,7 @@ const Videos = ({ videos, direction }) => {
 
   useEffect(() => {
     const filteredVideos = videos.filter((item) => {
-      return item.id.kind != "youtube#playlist"
+      return item.id.kind !== "youtube#playlist"
     })
     setVideos1(filteredVideos)
   }, [videos])
