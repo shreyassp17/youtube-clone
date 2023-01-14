@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { Stack, Box } from '@mui/system'
 import { VideoCard, ChannelCard } from './'
 import CircularProgress from '@mui/material/CircularProgress';
