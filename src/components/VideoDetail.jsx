@@ -12,7 +12,6 @@ const VideoDetail = () => {
   const [videoDetail, setVideoDetail] = useState(null);
   const [videos, setVideos] = useState(null);
   const { id } = useParams();
-  console.log(videoDetail)
 
   useEffect(() => {
     fetchFromAPI(`videos?part=snippet,statistics&id=${id}&type=video`)
@@ -33,7 +32,7 @@ const VideoDetail = () => {
     <Box minHeight='95vh'>
       <Stack direction={{ xs: 'column', md: 'row' }}>
         <Box flex={1}>
-          <Box sx={{ width: '100%', position: 'sticky', top: '86px' }}>
+          <Box sx={{ width: '100%', position: 'sticky', top: '86px',m:2 }}>
             <ReactPlayer url={`https://www.youtube.com/watch?v=${id}`}
               className='react-player ' controls />
             <Typography color="#fff" variant="h5" fontWeight="bold" margin="10px 0 0 5px">

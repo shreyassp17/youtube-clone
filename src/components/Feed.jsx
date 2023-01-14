@@ -15,7 +15,6 @@ const Feed = () => {
     })
 
   },[selectedCategory])
-
   return (
     <Stack sx={{ flexDirection: { xs: "column", md: "row" } }}>
       {/* Sidebar */}
